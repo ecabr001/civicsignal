@@ -15,10 +15,19 @@ export default function BarbaraLeePage() {
         </h1>
 
         <p className="mt-6 text-xl leading-8 text-slate-700">
-          A plain-language look at what Oakland&apos;s mayor can actually shape,
-          what she cannot, and what residents may notice in daily life — without
-          treating every city trend as her doing.
+          A plain-language framework for what Oakland&apos;s mayor can shape,
+          what she cannot, and what residents may notice in daily life.
         </p>
+
+        <div className="mt-8 rounded-2xl border border-amber-200 bg-amber-50 px-5 py-4 text-slate-800">
+          <p className="font-semibold text-slate-900">Research status</p>
+          <p className="mt-2 text-sm leading-6 text-slate-700">
+            This is a CivicSignal prototype. It is not yet fully sourced.
+            Sections on mayoral power describe the office in general. Recent
+            actions are structured placeholders — no specific mayor decisions
+            have been verified or attributed here.
+          </p>
+        </div>
 
         <section className="mt-12">
           <h2 className="text-2xl font-bold">At a glance</h2>
@@ -29,10 +38,11 @@ export default function BarbaraLeePage() {
               budget, and runs city departments.
             </li>
             <li className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3">
-              <span className="font-medium text-slate-900">Top issues on her
-              plate:</span> public safety, homelessness and housing, city
-              finances, basic services (roads, libraries, parks), and
-              rebuilding trust in City Hall.
+              <span className="font-medium text-slate-900">
+                Issues residents often watch:
+              </span>{" "}
+              public safety, homelessness and housing, city finances, basic
+              services (roads, libraries, parks), and trust in City Hall.
             </li>
             <li className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3">
               <span className="font-medium text-slate-900">Reality check:</span>{" "}
@@ -45,14 +55,17 @@ export default function BarbaraLeePage() {
 
         <section className="mt-12">
           <h2 className="text-2xl font-bold">What the mayor controls</h2>
+          <p className="mt-2 text-slate-600">
+            General powers of the office — not a list of what Lee has done.
+          </p>
           <div className="mt-4 space-y-4">
             <InfoCard
               title="City budget priorities"
-              body="Lee proposes how Oakland spends money — police staffing levels, library hours, road repair, homeless services, and more. Council must approve the final budget, but the mayor's plan sets the starting point."
+              body="The mayor proposes how Oakland spends money — police staffing levels, library hours, road repair, homeless services, and more. Council must approve the final budget, but the mayor's plan sets the starting point."
             />
             <InfoCard
               title="Department leadership"
-              body="She appoints and directs city administrators who run day-to-day operations: police, public works, housing, economic development, and others."
+              body="The mayor appoints and directs city administrators who run day-to-day operations: police, public works, housing, economic development, and others."
             />
             <InfoCard
               title="Emergency response and public messaging"
@@ -89,13 +102,16 @@ export default function BarbaraLeePage() {
 
         <section className="mt-12">
           <h2 className="text-2xl font-bold">What to watch</h2>
+          <p className="mt-2 text-slate-600">
+            Signals to track once official data and reporting are linked.
+          </p>
           <ul className="mt-4 space-y-3 text-slate-700">
             <li className="rounded-2xl border border-slate-200 px-4 py-3">
               <span className="font-medium text-slate-900">
                 911 and police response times
               </span>{" "}
-              — staffing plans and budget choices should show up here within
-              months, not years.
+              — staffing plans and budget choices may show up here within months,
+              not years.
             </li>
             <li className="rounded-2xl border border-slate-200 px-4 py-3">
               <span className="font-medium text-slate-900">
@@ -115,8 +131,8 @@ export default function BarbaraLeePage() {
               <span className="font-medium text-slate-900">
                 City deficit and tax talk
               </span>{" "}
-              — Oakland has faced budget gaps before. Watch whether Lee closes
-              shortfalls through cuts, new revenue, or both.
+              — Oakland has faced budget gaps before. Watch whether the mayor
+              closes shortfalls through cuts, new revenue, or both.
             </li>
           </ul>
         </section>
@@ -124,54 +140,59 @@ export default function BarbaraLeePage() {
         <section className="mt-12 space-y-6">
           <h2 className="text-2xl font-bold">Recent actions</h2>
           <p className="text-slate-600">
-            Illustrative summaries for this prototype — not a live vote tracker.
+            Topic placeholders. Each card shows what CivicSignal would fill in
+            once sources are linked.
           </p>
 
           <ActionCard
-            title="Public safety staffing plan"
-            summary="Early focus on filling police vacancies and improving emergency dispatch. Supporters hope faster 911 response; critics want more investment in non-police crisis teams."
-            impact="Day-to-day: wait times after you call for help, and whether officers are visible in your neighborhood."
+            title="Public safety staffing"
+            whatWeKnow="Barbara Lee holds the mayor's office. In Oakland, the mayor influences police staffing through budget proposals and department leadership. No specific staffing decision has been verified on this page."
+            whatThisCouldMean="Residents might notice changes in 911 wait times, how quickly calls get a response, and whether patrol levels feel different in their neighborhood."
+            whatWeStillNeed="Whether Lee has proposed or directed any staffing changes, what OPD recruitment or dispatch budget lines look like, and whether any response-time targets were announced."
+            sourceTargets="Mayor's office press releases on public safety; Oakland city budget OPD staffing and recruitment line items; OPD or 911 call-center performance dashboards; City Council public safety committee meeting records"
           />
 
           <ActionCard
-            title="Homelessness and encampment strategy"
-            summary="Pushed for a clearer citywide approach — more shelter beds, coordinated cleanups, and outreach before removals. Details still depend on county partners and available funding."
-            impact="Day-to-day: whether encampments near your block are addressed quickly, and whether people are offered shelter instead of just being moved."
+            title="Homelessness and encampment policy"
+            whatWeKnow="Oakland's mayor helps set local homeless spending and encampment response, but Alameda County runs much of the safety-net system. No specific encampment or shelter policy has been verified on this page."
+            whatThisCouldMean="Residents might notice how quickly encampments near them are addressed, whether people are offered shelter before being moved, and whether street conditions change."
+            whatWeStillNeed="Any announced encampment protocol changes, shelter-bed funding in the city budget, and whether new county coordination agreements exist."
+            sourceTargets="City Council agenda items on homelessness ordinances; mayor's office announcements on encampment or shelter strategy; city budget homeless-services allocations; Oaklandside or SF Chronicle reporting on encampment operations"
           />
 
           <ActionCard
             title="City services and infrastructure"
-            summary="Directed departments to prioritize library reopenings, park maintenance, and road repair in the first budget cycle. Full results hinge on how much money Council approves."
-            impact="Day-to-day: library hours, playground conditions, and how long broken streets stay unfixed."
+            whatWeKnow="The mayor directs department priorities for libraries, parks, and road maintenance through the budget process. No specific service restoration or infrastructure initiative has been verified on this page."
+            whatThisCouldMean="Residents might notice library hours, playground upkeep, trash pickup, and how long potholes or broken sidewalks go unfixed."
+            whatWeStillNeed="Department budget requests for libraries, parks, and public works; any stated timelines for restoring services; and whether Council approved related spending."
+            sourceTargets="City budget line items for libraries, parks, and public works; Public Works service-request or street-repair dashboards; City Council budget hearing records; mayor press releases on city services"
           />
 
           <ActionCard
-            title="Housing production push"
-            summary="Signaled support for faster permitting on affordable and infill housing. Builders still face labor costs, financing, and state building rules the mayor cannot waive."
-            impact="Day-to-day: whether new apartments and ADUs actually get built near you, and whether rent pressure eases over time."
+            title="Housing production and permitting"
+            whatWeKnow="The mayor can influence permitting speed and affordable-housing funding, but state building rules and market conditions limit what City Hall can do alone. No specific permitting or housing funding action has been verified on this page."
+            whatThisCouldMean="Residents might notice whether housing approvals move faster, whether affordable projects get funded, and whether new construction shows up nearby over time."
+            whatWeStillNeed="Any permitting reform proposals, affordable-housing budget allocations, Planning Bureau staffing changes, and Council votes on related housing items."
+            sourceTargets="Planning and Building permit-processing dashboards; City Council housing agenda items and votes; mayor statements or press releases on housing production; Oaklandside or SF Chronicle coverage of permitting backlogs"
           />
         </section>
 
         <section className="mt-12 rounded-2xl border border-slate-200 bg-slate-50 p-6">
           <h2 className="text-2xl font-bold">Bottom line</h2>
           <p className="mt-4 text-lg leading-8 text-slate-700">
-            Barbara Lee runs Oakland&apos;s executive branch — she sets direction,
-            proposes spending, and oversees the departments that touch your
-            streets, parks, police response, and housing pipeline. She does not
+            Barbara Lee runs Oakland&apos;s executive branch — she can set
+            direction, propose spending, and oversee departments that touch
+            streets, parks, police response, and housing. She cannot
             single-handedly fix crime, homelessness, or the cost of living.
           </p>
           <p className="mt-4 text-lg leading-8 text-slate-700">
-            For residents, the fair test is whether city services get better,
-            decisions get clearer, and Oakland&apos;s biggest problems move in the
-            right direction — while remembering that Council, the county, the
+            This page does not yet answer what she has changed. Once CivicSignal
+            links sources, the fair test is whether city services improve,
+            decisions get clearer, and Oakland&apos;s biggest problems move in
+            the right direction — while remembering that Council, the county, the
             state, and the broader economy all share the wheel.
           </p>
         </section>
-
-        <p className="mt-12 text-sm text-slate-500">
-          CivicSignal prototype. Connect official city records, budget documents,
-          and council votes for production use.
-        </p>
       </div>
     </main>
   );
@@ -188,20 +209,40 @@ function InfoCard({ title, body }: { title: string; body: string }) {
 
 function ActionCard({
   title,
-  summary,
-  impact,
+  whatWeKnow,
+  whatThisCouldMean,
+  whatWeStillNeed,
+  sourceTargets,
 }: {
   title: string;
-  summary: string;
-  impact: string;
+  whatWeKnow: string;
+  whatThisCouldMean: string;
+  whatWeStillNeed: string;
+  sourceTargets: string;
 }) {
   return (
     <div className="rounded-2xl border border-slate-200 p-6">
       <h3 className="text-xl font-bold">{title}</h3>
-      <p className="mt-3 text-slate-700 leading-7">{summary}</p>
-      <p className="mt-4 font-medium text-slate-900">
-        Likely impact: {impact}
-      </p>
+      <dl className="mt-4 space-y-4 text-slate-700">
+        <div>
+          <dt className="font-medium text-slate-900">What we know:</dt>
+          <dd className="mt-1 leading-7">{whatWeKnow}</dd>
+        </div>
+        <div>
+          <dt className="font-medium text-slate-900">What this could mean:</dt>
+          <dd className="mt-1 leading-7">{whatThisCouldMean}</dd>
+        </div>
+        <div>
+          <dt className="font-medium text-slate-900">
+            What we still need to verify:
+          </dt>
+          <dd className="mt-1 leading-7">{whatWeStillNeed}</dd>
+        </div>
+        <div>
+          <dt className="font-medium text-slate-900">Source targets:</dt>
+          <dd className="mt-1 leading-7">{sourceTargets}</dd>
+        </div>
+      </dl>
     </div>
   );
 }
